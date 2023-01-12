@@ -116,9 +116,9 @@ public returnStyleValues() {
   }
 
   /**
-   * 
+   *
    * @param data the html element collection to save defaults to
-   * 
+   *
    */
   private getFormData(data: any) {
     for (var i = 0; i < data.length; i++) {
@@ -131,7 +131,7 @@ public returnStyleValues() {
 
   /**
    * @returns html section to be printed along with some associated inputs
-   * 
+   *
    */
   private getHtmlContents() {
     let printContents = document.getElementById(this.printSectionId);
@@ -140,7 +140,7 @@ public returnStyleValues() {
 
     let txt = printContents.getElementsByTagName('textarea');
     this.getFormData(txt);
-    
+
     return printContents.innerHTML;
   }
 
@@ -184,7 +184,7 @@ public returnStyleValues() {
             function closeWindow(){
                 window.close();
             }
-            window.addEventListener('load', triggerPrint, false);
+            /* window.addEventListener('load', triggerPrint, false); */
           </script>
         </body>
       </html>`);
